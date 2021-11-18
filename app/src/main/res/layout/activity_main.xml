@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:entries="@array/setting"
+        android:popupBackground="@color/black"
+        android:background="#50FFFFFF"/>
+
+    <EditText
+        android:id="@+id/textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/location"
+        android:background="#80FFFFFF"
+        android:drawableStart="@drawable/ic_baseline_account_box_24"
+        android:hint="Имя персонажа"
+        android:inputType="textPersonName"
+        android:translationY="40dp" />
+
+    <Button
+        android:id="@+id/generation"
+        android:layout_width="229dp"
+        android:layout_height="109dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/btn"
+        android:onClick="generation"
+        android:text="ГЕНЕРИРОВАТЬ"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:translationY="-60dp" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/spinner"
+        android:background="#80FFFFFF"
+        android:drawableStart="@android:drawable/ic_menu_mapmode"
+        android:hint="Введите локацию"
+        android:inputType="text"
+        android:translationY="20dp" />
+
+</RelativeLayout>
